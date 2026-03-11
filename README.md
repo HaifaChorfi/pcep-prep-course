@@ -19,8 +19,10 @@ Ce dépôt contient des ressources interactives pour réviser l’examen PCEP
 ## 👩‍🏫 Auteur
 
 Développé par Haifa Chorfi 
-vISET Beja · Département Informatique · 2025-2026
+ISET Beja · Département Informatique · 2025-2026
 
 ---
 
 *Pour ajouter des questions ou signaler un problème, ouvrir une issue sur le repo GitHub.*
+
+
