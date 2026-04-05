@@ -35,7 +35,7 @@ export default function App() {
           </button>
         ))}
 
-        <p style={{ color: "#2A4A6A", fontSize: 11, marginTop: 20 }}>
+        <p style={{ color: "#ffffff", fontSize: 11, marginTop: 20 }}>
           Mme. Haifa CHORFI · 2025-2026
         </p>
       </div>
