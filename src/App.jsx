@@ -1,12 +1,14 @@
 import { useState } from "react";
-import AppTP1 from "./AppTP1";   // renommer l'ancien App.jsx en AppTP1.jsx
+import AppTP1 from "./AppTP1";   
 import AppTP2 from "./QCM_TP2";
+import AppTP3 from "./AppTP3";
 
 export default function App() {
   const [tp, setTp] = useState(null);
 
   if (tp === "tp1") return <AppTP1 onBack={() => setTp(null)} />;
   if (tp === "tp2") return <AppTP2 onBack={() => setTp(null)} />;
+  if (tp === "tp3") return <AppTP3 onBack={() => setTp(null)}/>;
 
   return (
     <div style={{
@@ -23,6 +25,14 @@ export default function App() {
         {[
           { tp: "tp1", title: "TP1 — Premiers pas", subtitle: "print() · Littéraux · Bases numériques · Erreurs", color: "#1A5276" },
           { tp: "tp2", title: "TP2 — Variables & Opérateurs", subtitle: "input() · Types · // % ** · Opérateurs augmentés", color: "#E67E22" },
+          {
+      tp: "tp3",
+      title: "TP3 — Structures Conditionnelles",
+      subtitle: "if · elif · else · and · or · not · Conditions imbriquées",
+      tags: ["10 questions", "Module 3"],
+      color: "#1E8449",
+      border: "#27AE60",
+    },
         ].map((item) => (
           <button key={item.tp} onClick={() => setTp(item.tp)}
             style={{
