@@ -2,7 +2,6 @@
 //  QCM TP3 — Structures Conditionnelles  |  PCEP Module 3  |  ISET Béja
 //  Firebase Realtime Database  ·  GitHub Pages
 //  Chronomètre 60s strict par question (passage automatique)
-//  Mot de passe enseignant : iset2025
 // ─────────────────────────────────────────────────────────────────────────────
 import { useState, useEffect } from "react";
 import { db } from "./firebase";

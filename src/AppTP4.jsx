@@ -2,7 +2,6 @@
 //  QCM TP4 — Boucles · Listes · Opérations logiques & bit à bit
 //  PCEP Module 3 Section 2  |  ISET Béja  |  60s strict par question
 //  Firebase Realtime Database  ·  GitHub Pages
-//  Mot de passe enseignant : iset2025
 // ─────────────────────────────────────────────────────────────────────────────
 import { useState, useEffect } from "react";
 import { db } from "./firebase";
