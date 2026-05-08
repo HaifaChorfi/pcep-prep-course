@@ -2,6 +2,7 @@ import { useState } from "react";
 import AppTP1 from "./AppTP1";   
 import AppTP2 from "./QCM_TP2";
 import AppTP3 from "./AppTP3";
+import APPTP4 from "./AppTP4"
 
 export default function App() {
   const [tp, setTp] = useState(null);
@@ -9,6 +10,7 @@ export default function App() {
   if (tp === "tp1") return <AppTP1 onBack={() => setTp(null)} />;
   if (tp === "tp2") return <AppTP2 onBack={() => setTp(null)} />;
   if (tp === "tp3") return <AppTP3 onBack={() => setTp(null)}/>;
+  if (tp === "tp4") return <AppTP4 onBack={() => setTp(null)}/>;
 
   return (
     <div style={{
@@ -32,7 +34,7 @@ export default function App() {
       tags: ["10 questions", "Module 3"],
       color: "#1E8449",
       border: "#27AE60",
-    },
+    },{ tp: "tp4", title: "TP4 — Itérations & Listes", subtitle: "for · while · range · break. continue", color: "#c9e622" },
         ].map((item) => (
           <button key={item.tp} onClick={() => setTp(item.tp)}
             style={{
