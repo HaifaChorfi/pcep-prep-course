@@ -1,7 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  QCM TP2 — Variables, Types & Opérateurs  |  PCEP Module 2  |  ISET Béja
 //  Firebase Realtime Database  ·  GitHub Pages
-//  Mot de passe enseignant : iset2025
 // ─────────────────────────────────────────────────────────────────────────────
 import { useState, useEffect, useCallback } from "react";
 import { db } from "./firebase";

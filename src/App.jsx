@@ -3,6 +3,7 @@ import AppTP1 from "./AppTP1";
 import AppTP2 from "./QCM_TP2";
 import AppTP3 from "./AppTP3";
 import AppTP4 from "./AppTP4"
+import AppTP5 from "./AppTP5"
 
 export default function App() {
   const [tp, setTp] = useState(null);
@@ -11,6 +12,7 @@ export default function App() {
   if (tp === "tp2") return <AppTP2 onBack={() => setTp(null)} />;
   if (tp === "tp3") return <AppTP3 onBack={() => setTp(null)}/>;
   if (tp === "tp4") return <AppTP4 onBack={() => setTp(null)}/>;
+  if (tp === "tp5") return <AppTP5 onBack={() => setTp(null)}/>;
 
   return (
     <div style={{
@@ -35,6 +37,7 @@ export default function App() {
       color: "#1E8449",
       border: "#27AE60",
     },{ tp: "tp4", title: "TP4 — Itérations & Listes", subtitle: "for · while · range · break. continue", color: "#c9e622" },
+    { tp: "tp5", title: "TP5 — Fonctions, Tuples, Dictionnaires & Exceptions", subtitle: "def / return  · global · tuple = () immuable · dict = {} mutable· try/except/finally ", color: "#f5f5b0" },
         ].map((item) => (
           <button key={item.tp} onClick={() => setTp(item.tp)}
             style={{
