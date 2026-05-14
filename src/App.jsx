@@ -2,7 +2,7 @@ import { useState } from "react";
 import AppTP1 from "./AppTP1";   
 import AppTP2 from "./QCM_TP2";
 import AppTP3 from "./AppTP3";
-import AppTP4 from "./AppTP4"
+import AppTP4 from "./AppTP4";
 import AppTP5 from "./AppTP5"
 
 export default function App() {
